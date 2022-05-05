@@ -1,0 +1,43 @@
+body {
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.selecaoCodificacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.selecaoCifra {
+    display: flex;
+}
+
+h1, .formulario label, .formulario textarea, .formulario select, .formulario .selecao, .formulario button, #incrementoCifra {
+    margin: 1% 0 0 2%;
+}
+
+.formulario button {
+    width: 20%;
+}
+
+.formulario select {
+    width: 40%;
+}
+
+#acao {
+    display: none;
+    justify-content: center;
+}
+
+#incrementoCifra {
+    display: none;
+}
