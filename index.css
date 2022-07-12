@@ -1,9 +1,23 @@
 body {
     width: 100%;
+    background: black;
+    color: greenyellow;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 28px;
+    margin: 5% 0 0 10%;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .formulario {
@@ -21,16 +35,50 @@ h1 {
     display: flex;
 }
 
-h1, .formulario label, .formulario textarea, .formulario select, .formulario .selecao, .formulario button, #incrementoCifra {
-    margin: 1% 0 0 2%;
+.formulario textarea, .acaoUsuario textarea {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border: 0px solid transparent;
+    padding: 8px 0 0 8px;
+    border-radius: 2px;
+}
+
+#incrementoCifra input {
+    margin-left: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border: 0px solid transparent;
+    padding-left: 8px;
+    border-radius: 2px;
+}
+
+label.title, .formulario textarea, .formulario select, .formulario .selecao, .formulario button, #incrementoCifra, #resultado {
+    margin: 1% 0 0 10%;
 }
 
 .formulario button {
+    margin: 2% 10%;
     width: 20%;
+    padding: 8px 0;
+    background-color: black;
+    color: white;
+    border: 2px solid greenyellow;
+    border-radius: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
 }
 
 .formulario select {
     width: 40%;
+    background-color: greenyellow;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    border-radius: 2px;
 }
 
 #acao {

@@ -12,11 +12,11 @@
     <div class="container">
         <form class="formulario">
             <h1>Codificador de mensagens</h1>
-            <label for="mensagem">Entrada de mensagem:</label>
-            <textarea name="" id="entradaMensagem" cols="30" rows="10"></textarea>
+            <label class="title" for="mensagem">Que mensagem você quer codificar?</label>
+            <textarea name="" id="entradaMensagem" cols="30" rows="6"></textarea>
             
             <div class="selecaoCodificacao">
-                <label for="cifra">Entrada de cifra:</label>
+                <label class="title" for="cifra">Qual tipo de codificação você quer usar?</label>
                 <div class="selecaoCifra">
                     <select name="cifra" id="entradaCifra">
                         <option disabled selected value>-- Selecione um método de codificação --</option>
@@ -24,12 +24,11 @@
                         <option id="base64" value="cifraBase64">Base64</option>
                     </select>
                     <div id="incrementoCifra">
-                        <label for="incremento">Incremento:</label>
+                        <label class="title" for="incremento">Incremento:</label>
                         <input id="numeroIncremento" type="number">
                     </div>
                 </div>
             </div>
-
             <div class="selecao">
                 <input id="selecaoCodificar" type="radio" name="escolha" value="codificar">
                 <label for="codificar">Codificar</label>
@@ -39,9 +38,9 @@
             </div>
 
             <button id="acao">SELECIONE UMA OPÇÃO</button>
-        </form>
-        
-        <textarea id="resultado"></textarea>
+            <label class="title" for="resultado">Resultado:</label>
+            <textarea id="resultado" cols="30" rows="6"></textarea>
+        </form>        
     </div>
     <script src="./index.js"></script>
 </body>
